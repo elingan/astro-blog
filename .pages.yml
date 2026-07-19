@@ -50,3 +50,15 @@ content:
                     type: string
                   - name: url
                     type: string      
+      - name: sections_tow
+        label: Sections otra
+        type: block
+        list: true
+        blockKey: type
+        blocks:
+          - name: hero
+            component: hero
+          - name: text
+            fields:
+              - name: body
+                type: rich-text                    
