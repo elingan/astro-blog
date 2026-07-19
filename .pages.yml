@@ -37,11 +37,12 @@ content:
       - { name: title, label: Title, type: string }
       - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
       - name: sections
+        label: Banner del usuario
         type: block
         list: true
         blockKey: type
         blocks:
-          - name: cta
+          - name: notification
             fields:
               - name: button
                 type: object
@@ -50,7 +51,7 @@ content:
                     type: string
                   - name: url
                     type: string      
-          - name: text
+          - name: message
             fields:
               - name: body
                 type: rich-text                    
