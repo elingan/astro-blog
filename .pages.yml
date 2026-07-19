@@ -20,6 +20,17 @@ content:
       - { name: tags, label: Tags, type: string, list: true }
       - { name: description, label: Description, type: string }
       - { name: body, label: Body, type: rich-text }
+  - name: sections
+    type: block
+    options:
+      blockKey: type
+      blocks:
+        - name: hero
+          label: Hero
+          fields: [{ name: title, type: string }]
+        - name: cta
+          label: CTA
+          fields: [{ name: label, type: string }, { name: href, type: url }]      
   - name: about
     label: About page
     type: file
