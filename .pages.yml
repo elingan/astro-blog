@@ -28,6 +28,12 @@ content:
       - { name: layout, type: string, hidden: true, default: "../layouts/AboutLayout.astro" }
       - { name: title, label: Title, type: string }
       - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
+      - name: cover
+        label: Cover image
+        type: image
+        options:
+          media: images
+          path: public/images/posts
   - name: contact
     label: Contactame
     type: file
